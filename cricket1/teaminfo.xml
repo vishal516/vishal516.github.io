@@ -1,0 +1,932 @@
+<Data>
+	<Teams>
+		<Team id='Chennai' no = '1' >
+			<Name>Chennai</Name>
+			<TeamColor>Light Blue</TeamColor>
+			<Players>
+				<Player player_Id='1'>
+					<FirstName>Saurish</FirstName>
+					<LastName>Raynae</LastName>
+					<Hand>Left</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='2'>
+					<FirstName>Robindra</FirstName>
+					<LastName>Joteja</LastName>
+					<Hand>Left</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='3'>
+					<FirstName>Dawayne</FirstName>
+					<LastName>Bravia</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='4'>
+					<FirstName>BB</FirstName>
+					<LastName>McMullum</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='5'>
+					<FirstName>Dawayne</FirstName>
+					<LastName>Smitch</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='6'>
+					<FirstName>MS</FirstName>
+					<LastName>Downie</LastName>
+					<Hand>Right</Hand>
+					<Type>WicketKeeper</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType/>
+					<Captian>1</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='7'>
+					<FirstName>Dawayne</FirstName>
+					<LastName>Bravio</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='8'>
+					<FirstName>Asish</FirstName>
+					<LastName>Nahre</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='9'>
+					<FirstName>Eshwar</FirstName>
+					<LastName>Penday</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='10'>
+					<FirstName>Raavichandra</FirstName>
+					<LastName>Aaswin</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='11'>
+					<FirstName>Samool</FirstName>
+					<LastName>Batree</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+			</Players>
+		</Team>
+		<Team id='Delhi' no = '2'>
+			<Name>Delhi</Name>
+			<TeamColor>Dark Blue</TeamColor>
+			<Players>
+				<Player player_Id='1'>
+					<FirstName>Murali</FirstName>
+					<LastName>Vejey</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='2'>
+					<FirstName>Manuj</FirstName>
+					<LastName>Tevare</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='3'>
+					<FirstName>Kelvin</FirstName>
+					<LastName>Pietersoon</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>1</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='4'>
+					<FirstName>JB</FirstName>
+					<LastName>Dimini</LastName>
+					<Hand>Left</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='5'>
+					<FirstName>Rouse</FirstName>
+					<LastName>Tailor</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='6'>
+					<FirstName>Dinish</FirstName>
+					<LastName>Cartik</LastName>
+					<Hand>Right</Hand>
+					<Type>WicketKeeper</Type>
+					<BowlingType/>
+					<VariationType/>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='7'>
+					<FirstName>Sidaarth</FirstName>
+					<LastName>Kole</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='8'>
+					<FirstName>Wayane</FirstName>
+					<LastName>Pyrnell</LastName>
+					<Hand>Left</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='9'>
+					<FirstName>Mohhammad</FirstName>
+					<LastName>Shaame</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='10'>
+					<FirstName>Rahool</FirstName>
+					<LastName>Sarman</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id = '11'>
+					<FirstName>Shahbaas</FirstName>
+					<LastName>Natim</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+			</Players>
+		</Team>
+		<Team id='Punjab' no = '3'>
+			<Name>Punjab</Name>
+			<TeamColor>Red</TeamColor>
+			<Players>
+				<Player player_Id='1'>
+					<FirstName>Giorje</FirstName>
+					<LastName>Belly</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>1</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='2'>
+					<FirstName>Virendra</FirstName>
+					<LastName>Shehzag</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='3'>
+					<FirstName>Gliann</FirstName>
+					<LastName>Maxwool</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='4'>
+					<FirstName>Shoun</FirstName>
+					<LastName>March</LastName>
+					<Hand>Left</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='5'>
+					<FirstName>Manon</FirstName>
+					<LastName>Vahra</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='6'>
+					<FirstName>Wryddhimann</FirstName>
+					<LastName>Shaha</LastName>
+					<Hand>Right</Hand>
+					<Type>WicketKeeper</Type>
+					<BowlingType/>
+					<VariationType/>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='7'>
+					<FirstName>Shaundeep</FirstName>
+					<LastName>Shorma</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='8'>
+					<FirstName>Moraly</FirstName>
+					<LastName>Kirtik</LastName>
+					<Hand>Left</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='9'>
+					<FirstName>MG</FirstName>
+					<LastName>Johanson</LastName>
+					<Hand>Left</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='10'>
+					<FirstName>Shyvem</FirstName>
+					<LastName>Saharma</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='11'>
+					<FirstName>Ekshar</FirstName>
+					<LastName>Patil</LastName>
+					<Hand>Left</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+			</Players>
+		</Team>
+		<Team id='Kolkata' no = '4'>
+			<Name>Kolkata</Name>
+			<TeamColor>Dark Blue</TeamColor>
+			<Players>
+				<Player player_Id='1'>
+					<FirstName>Goutem</FirstName>
+					<LastName>Gamphir</LastName>
+					<Hand>Left</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>1</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='2'>
+					<FirstName>Rubin</FirstName>
+					<LastName>Uthapp</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='3'>
+					<FirstName>Yasuf</FirstName>
+					<LastName>Pataan</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='4'>
+					<FirstName>Munish</FirstName>
+					<LastName>Pendey</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='5'>
+					<FirstName>Jackes</FirstName>
+					<LastName>Qualis</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='6'>
+					<FirstName>Manwinter</FirstName>
+					<LastName>Bizla</LastName>
+					<Hand>Right</Hand>
+					<Type>WicketKeeper</Type>
+					<BowlingType/>
+					<VariationType/>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='7'>
+					<FirstName>Omesh</FirstName>
+					<LastName>Zadav</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='8'>
+					<FirstName>Sonil</FirstName>
+					<LastName>Narane</LastName>
+					<Hand>Left</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='9'>
+					<FirstName>Murni</FirstName>
+					<LastName>Murkel</LastName>
+					<Hand>Left</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='10'>
+					<FirstName>Zakib</FirstName>
+					<LastName>Hazan</LastName>
+					<Hand>Left</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='11'>
+					<FirstName>Veer</FirstName>
+					<LastName>Zing</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+			</Players>
+		</Team>
+		<Team id='Mumbai' no = '5'>
+			<Name>Mumbai</Name>
+			<TeamColor>Light Blue</TeamColor>
+			<Players>
+				<Player player_Id = '1'>
+					<FirstName>Ronit</FirstName>
+					<LastName>Sharman</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>1</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id = '2'>
+					<FirstName>Amvati</FirstName>
+					<LastName>Reydu</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id = '3'>
+					<FirstName>CJ</FirstName>
+					<LastName>Anterzon</LastName>
+					<Hand>Left</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id = '4'>
+					<FirstName>Mite</FirstName>
+					<LastName>Husney</LastName>
+					<Hand>Left</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id = '5'>
+					<FirstName>Karon</FirstName>
+					<LastName>Pullhard</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id = '6'>
+					<FirstName>Advitya</FirstName>
+					<LastName>Zare</LastName>
+					<Hand>Right</Hand>
+					<Type>WicketKeeper</Type>
+					<BowlingType/>
+					<VariationType/>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id = '7'>
+					<FirstName>Gurbhajan</FirstName>
+					<LastName>Sing</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id = '8'>
+					<FirstName>Parigan</FirstName>
+					<LastName>Ojhla</LastName>
+					<Hand>Left</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id = '9'>
+					<FirstName>Saheer</FirstName>
+					<LastName>Khan</LastName>
+					<Hand>Left</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id = '10'>
+					<FirstName>Lattis</FirstName>
+					<LastName>Malenga</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id = '11'>
+					<FirstName>Krishnmar</FirstName>
+					<LastName>Santoktie</LastName>
+					<Hand>Left</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+			</Players>
+		</Team>
+		<Team id='Hyderabad' no = '6'>
+			<Name>Hyderabad</Name>
+			<TeamColor>Orange</TeamColor>
+			<Players>
+				<Player player_Id='1'>
+					<FirstName>Snikkar</FirstName>
+					<LastName>Dhawan</LastName>
+					<Hand>Left</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>1</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='2'>
+					<FirstName>Tarren</FirstName>
+					<LastName>Shammy</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='3'>
+					<FirstName>Davit</FirstName>
+					<LastName>Warmer</LastName>
+					<Hand>Left</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='4'>
+					<FirstName>Karon</FirstName>
+					<LastName>Sinch</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='5'>
+					<FirstName>Srinanth</FirstName>
+					<LastName>Amirudh</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType/>
+					<VariationType/>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='6'>
+					<FirstName>KLP</FirstName>
+					<LastName>Sahul</LastName>
+					<Hand>Right</Hand>
+					<Type>WicketKeeper</Type>
+					<BowlingType/>
+					<VariationType/>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='7'>
+					<FirstName>Echant</FirstName>
+					<LastName>Sarman</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='8'>
+					<FirstName>Amrit</FirstName>
+					<LastName>Sishra</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='9'>
+					<FirstName>Bhruvneshwra</FirstName>
+					<LastName>Rumar</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='10'>
+					<FirstName>Izran</FirstName>
+					<LastName>Prathan</LastName>
+					<Hand>Left</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='11'>
+					<FirstName>Dwale</FirstName>
+					<LastName>Stefen</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+			</Players>
+		</Team>
+		<Team id='Rajasthan' no = '7'>
+			<Name>Rajasthan</Name>
+			<TeamColor>Royal Blue</TeamColor>
+			<Players>
+				<Player player_Id='1'>
+					<FirstName>Shwane</FirstName>
+					<LastName>Waterson</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>1</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='2'>
+					<FirstName>Aazinkya</FirstName>
+					<LastName>Rahzane</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='3'>
+					<FirstName>Brat</FirstName>
+					<LastName>Hotge</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='4'>
+					<FirstName>Stewart</FirstName>
+					<LastName>Winny</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='5'>
+					<FirstName>Avishek</FirstName>
+					<LastName>Neyer</LastName>
+					<Hand>Left</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='6'>
+					<FirstName>Sonjo</FirstName>
+					<LastName>Simpson</LastName>
+					<Hand>Right</Hand>
+					<Type>WicketKeeper</Type>
+					<BowlingType/>
+					<VariationType/>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='7'>
+					<FirstName>Rajett</FirstName>
+					<LastName>Wattia</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='8'>
+					<FirstName>Tawal</FirstName>
+					<LastName>Kulcharni</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='9'>
+					<FirstName>Stefen</FirstName>
+					<LastName>Smitch</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='10'>
+					<FirstName>Kavron</FirstName>
+					<LastName>Copper</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='11'>
+					<FirstName>Prawine</FirstName>
+					<LastName>Tumbey</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+			</Players>
+		</Team>
+		<Team id='Bangalore' no = '8'>
+			<Name>Bangalore</Name>
+			<TeamColor>Royal Blue</TeamColor>
+			<Players>
+				<Player player_Id='1'>
+					<FirstName>Virad</FirstName>
+					<LastName>Mohli</LastName>
+					<Hand>Right</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>1</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='2'>
+					<FirstName>Huvraj</FirstName>
+					<LastName>Singh</LastName>
+					<Hand>Left</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='3'>
+					<FirstName>Tris</FirstName>
+					<LastName>Sayle</LastName>
+					<Hand>Left</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>medium</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='4'>
+					<FirstName>Nijay</FirstName>
+					<LastName>Mol</LastName>
+					<Hand>Left</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>slow</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='5'>
+					<FirstName>Alblie</FirstName>
+					<LastName>Mornel</LastName>
+					<Hand>Left</Hand>
+					<Type>Batsman</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='6'>
+					<FirstName>Prathin</FirstName>
+					<LastName>Patil</LastName>
+					<Hand>Left</Hand>
+					<Type>WicketKeeper</Type>
+					<BowlingType/>
+					<VariationType/>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='7'>
+					<FirstName>Varoon</FirstName>
+					<LastName>Amaron</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='8'>
+					<FirstName>Ashook</FirstName>
+					<LastName>Dinta</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='9'>
+					<FirstName>Aavu</FirstName>
+					<LastName>Ahzed</LastName>
+					<Hand>Right</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+				<Player player_Id='10'>
+					<FirstName>Mitsell</FirstName>
+					<LastName>Starch</LastName>
+					<Hand>Left</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>Off</VariationType>
+					<Captian>0</Captian>
+					<Color>Fair</Color>
+				</Player>
+				<Player player_Id='11'>
+					<FirstName>Rabbi</FirstName>
+					<LastName>Rempul</LastName>
+					<Hand>Left</Hand>
+					<Type>Bowler</Type>
+					<BowlingType>fast</BowlingType>
+					<VariationType>leg</VariationType>
+					<Captian>0</Captian>
+					<Color>Dark</Color>
+				</Player>
+			</Players>
+		</Team>
+	</Teams>
+</Data>
