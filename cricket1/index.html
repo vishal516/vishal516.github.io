@@ -39,12 +39,25 @@
 		}
     </style>
 	
-
+<script src="https://jiogames.akamaized.net/gameSDK/games_android_SDK.js"> </script>
 </head> 
  
 <body> 
 	<div id="fb-root"></div>
-	
+	<script>
+		var jioSDK = new Jiogames();
+		jioSDK.myAdspotkey ="6ab7b67b"; // The adspot key shared
+		jioSDK.myGameSource ="com.mds.cricket";// The package name of your game
+
+
+
+
+		function showAd(){
+			console.log("Ad is called");
+			jioSDK.showAd(jioSDK.myAdspotkey, jioSDK.myGameSource);
+		}
+
+	</script>
 	<script>
 	// Issue a warning if trying to preview an exported project on disk.
 	(function(){
