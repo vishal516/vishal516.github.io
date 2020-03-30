@@ -28503,6 +28503,7 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.acts.SetX,
 	cr.plugins_.LocalStorage.prototype.acts.SetItem,
 	cr.system_object.prototype.acts.AddVar,
+	cr.plugins_.Keyboard.prototype.cnds.OnKeyCode,
 	cr.plugins_.gamepad.prototype.cnds.OnButtonDown,
 	cr.system_object.prototype.acts.SubVar,
 	cr.plugins_.Sprite.prototype.acts.SubInstanceVar,
