@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1585582592,
+	"version": 1585685444,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -69,6 +69,8 @@
 		"images/btn_selection-sheet0.png",
 		"images/buttonselectionstart-sheet0.png",
 		"images/mainselection-sheet0.png",
+		"images/levelscroll-sheet0.png",
+		"images/downarrow-sheet0.png",
 		"media/select_sfx.m4a",
 		"media/select_sfx.ogg",
 		"media/explosion_01.m4a",
