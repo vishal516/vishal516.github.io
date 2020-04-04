@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1585756238,
+	"version": 1585985138,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -111,6 +111,7 @@
 		"images/took-sheet1.png",
 		"images/took-sheet2.png",
 		"images/spritelevel-sheet0.png",
+		"images/spritefont.png",
 		"media/bomb_smoke_02.m4a",
 		"media/bomb_smoke_02.ogg",
 		"media/stone_fall.m4a",
