@@ -51,8 +51,10 @@
 		jioSDK.myAdspotkey ="b2dd11dc"; // The adspot key shared
 		jioSDK.myGameSource ="com.mds.superarcherSTB";// The package name of your game
 
-
-
+		function cacheAd(){ 
+			console.log("Ad is cached")
+			jioSDK.cacheAd(jioSDK.myAdspotkey, jioSDK.myGameSource); 
+		} 
 
 		function showAd(){
 			console.log("Ad is called");
