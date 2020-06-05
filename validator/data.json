@@ -1,0 +1,705 @@
+{
+    "language": [
+        {
+            "textdata": [
+                {
+                    "text": " Kopieren",
+                    "ID": -162072
+                },
+                {
+                    "text": "R",
+                    "ID": -161900
+                },
+                {
+                    "text": "255",
+                    "ID": -161886
+                },
+                {
+                    "text": "",
+                    "ID": -161880
+                },
+                {
+                    "text": "+",
+                    "ID": -161868
+                },
+                {
+                    "text": "",
+                    "ID": -161840
+                },
+                {
+                    "text": "255",
+                    "ID": -161834
+                },
+                {
+                    "text": "0",
+                    "ID": -161796
+                },
+                {
+                    "text": "255",
+                    "ID": -161788
+                },
+                {
+                    "text": "0",
+                    "ID": -161780
+                },
+                {
+                    "text": "0",
+                    "ID": -161772
+                },
+                {
+                    "text": "Appear Duration:",
+                    "ID": -161768
+                },
+                {
+                    "text": "Enter text...",
+                    "ID": -161474
+                },
+                {
+                    "text": "Dauer Erscheinen:",
+                    "ID": -161274
+                },
+                {
+                    "text": "Text eingeben...",
+                    "ID": -161268
+                },
+                {
+                    "text": "",
+                    "ID": -161266
+                },
+                {
+                    "text": "Dauer Ausblenden:",
+                    "ID": -161214
+                },
+                {
+                    "text": "Text eingeben...",
+                    "ID": -161210
+                },
+                {
+                    "text": "",
+                    "ID": -161208
+                },
+                {
+                    "text": "Voice:",
+                    "ID": 336414
+                },
+                {
+                    "text": "BG Height:",
+                    "ID": 336432
+                },
+                {
+                    "text": "None",
+                    "ID": 336446
+                },
+                {
+                    "text": "Backgrounds",
+                    "ID": 336570
+                },
+                {
+                    "text": "Flip:",
+                    "ID": 336618
+                },
+                {
+                    "text": "Stop Record",
+                    "ID": 336626
+                },
+                {
+                    "text": "Play Record",
+                    "ID": 336634
+                },
+                {
+                    "text": "Volume:",
+                    "ID": 336674
+                },
+                {
+                    "text": "",
+                    "ID": 336754
+                },
+                {
+                    "text": "Start Record",
+                    "ID": 336772
+                },
+                {
+                    "text": "Delete Record",
+                    "ID": 336780
+                },
+                {
+                    "text": "w",
+                    "ID": 336824
+                },
+                {
+                    "text": "",
+                    "ID": 336854
+                },
+                {
+                    "text": "Font:",
+                    "ID": 336908
+                },
+                {
+                    "text": "Characters",
+                    "ID": 336924
+                },
+                {
+                    "text": "Disappear Animation:",
+                    "ID": 336942
+                },
+                {
+                    "text": "Background Color:",
+                    "ID": 336950
+                },
+                {
+                    "text": "Enter text...",
+                    "ID": 336996
+                },
+                {
+                    "text": "Go Back",
+                    "ID": 337040
+                },
+                {
+                    "text": "[00:00.0]",
+                    "ID": 337058
+                },
+                {
+                    "text": "Settings",
+                    "ID": 337112
+                },
+                {
+                    "text": "",
+                    "ID": 337120
+                },
+                {
+                    "text": "LOAD",
+                    "ID": 337146
+                },
+                {
+                    "text": "Gallery",
+                    "ID": 337192
+                },
+                {
+                    "text": "",
+                    "ID": 337200
+                },
+                {
+                    "text": "Enter text...",
+                    "ID": 337208
+                },
+                {
+                    "text": "",
+                    "ID": 337216
+                },
+                {
+                    "text": "",
+                    "ID": 337254
+                },
+                {
+                    "text": "Use Google TTS:",
+                    "ID": 337336
+                },
+                {
+                    "text": "Start Time:",
+                    "ID": 337410
+                },
+                {
+                    "text": "Exit",
+                    "ID": 337494
+                },
+                {
+                    "text": "Upper Left",
+                    "ID": 337596
+                },
+                {
+                    "text": "Google Api Key:",
+                    "ID": 337740
+                },
+                {
+                    "text": "Settings",
+                    "ID": 337776
+                },
+                {
+                    "text": "Export",
+                    "ID": 337784
+                },
+                {
+                    "text": "Enter text...",
+                    "ID": 337822
+                },
+                {
+                    "text": "Select item:",
+                    "ID": 337830
+                },
+                {
+                    "text": "",
+                    "ID": 337940
+                },
+                {
+                    "text": "WORKSPACE",
+                    "ID": 337976
+                },
+                {
+                    "text": "Font Size:",
+                    "ID": 338012
+                },
+                {
+                    "text": "00:10",
+                    "ID": 338038
+                },
+                {
+                    "text": "Enter text...",
+                    "ID": 338086
+                },
+                {
+                    "text": "CREATE",
+                    "ID": 338190
+                },
+                {
+                    "text": "Text Color:",
+                    "ID": 338238
+                },
+                {
+                    "text": "",
+                    "ID": 338284
+                },
+                {
+                    "text": "Duration:",
+                    "ID": 338320
+                },
+                {
+                    "text": "Minimize",
+                    "ID": 338366
+                },
+                {
+                    "text": "Enter text...",
+                    "ID": 338444
+                },
+                {
+                    "text": "Enter text...",
+                    "ID": 338464
+                },
+                {
+                    "text": "TTS/Record",
+                    "ID": 338472
+                },
+                {
+                    "text": "PROJECT NAME:",
+                    "ID": 338590
+                },
+                {
+                    "text": "Texts",
+                    "ID": 338634
+                },
+                {
+                    "text": "Move   A   To   B:",
+                    "ID": 338642
+                },
+                {
+                    "text": "",
+                    "ID": 338650
+                },
+                {
+                    "text": "",
+                    "ID": 338752
+                },
+                {
+                    "text": "None",
+                    "ID": 338764
+                },
+                {
+                    "text": "Save",
+                    "ID": 338802
+                },
+                {
+                    "text": "",
+                    "ID": 338854
+                },
+                {
+                    "text": "Appear Animation:",
+                    "ID": 338868
+                },
+                {
+                    "text": "X",
+                    "ID": 338876
+                },
+                {
+                    "text": "Musics",
+                    "ID": 338884
+                },
+                {
+                    "text": "",
+                    "ID": 338954
+                },
+                {
+                    "text": "",
+                    "ID": 338966
+                },
+                {
+                    "text": "Enter text...",
+                    "ID": 338980
+                },
+                {
+                    "text": "Loop:",
+                    "ID": 339100
+                }
+            ]
+        },
+        {
+            "textdata": [
+                {
+                    "text": " Kopieren",
+                    "ID": -162072
+                },
+                {
+                    "text": "R",
+                    "ID": -161900
+                },
+                {
+                    "text": "255",
+                    "ID": -161886
+                },
+                {
+                    "text": "",
+                    "ID": -161880
+                },
+                {
+                    "text": "+",
+                    "ID": -161868
+                },
+                {
+                    "text": "",
+                    "ID": -161840
+                },
+                {
+                    "text": "255",
+                    "ID": -161834
+                },
+                {
+                    "text": "0",
+                    "ID": -161796
+                },
+                {
+                    "text": "255",
+                    "ID": -161788
+                },
+                {
+                    "text": "0",
+                    "ID": -161780
+                },
+                {
+                    "text": "0",
+                    "ID": -161772
+                },
+                {
+                    "text": "Appear Duration:",
+                    "ID": -161768
+                },
+                {
+                    "text": "Enter text...",
+                    "ID": -161474
+                },
+                {
+                    "text": "Dauer Erscheinen:",
+                    "ID": -161274
+                },
+                {
+                    "text": "Text eingeben...",
+                    "ID": -161268
+                },
+                {
+                    "text": "",
+                    "ID": -161266
+                },
+                {
+                    "text": "Dauer Ausblenden:",
+                    "ID": -161214
+                },
+                {
+                    "text": "Text eingeben...",
+                    "ID": -161210
+                },
+                {
+                    "text": "",
+                    "ID": -161208
+                },
+                {
+                    "text": " Stimme:",
+                    "ID": 336414
+                },
+                {
+                    "text": "Hintergrund Höhe:",
+                    "ID": 336432
+                },
+                {
+                    "text": "None",
+                    "ID": 336446
+                },
+                {
+                    "text": " Hintergrund",
+                    "ID": 336570
+                },
+                {
+                    "text": " Spiegeln:",
+                    "ID": 336618
+                },
+                {
+                    "text": "Aufnahme stoppen",
+                    "ID": 336626
+                },
+                {
+                    "text": "Aufnahme wiedergeben",
+                    "ID": 336634
+                },
+                {
+                    "text": " Lautstärke:",
+                    "ID": 336674
+                },
+                {
+                    "text": "",
+                    "ID": 336754
+                },
+                {
+                    "text": "Aufnahme starten",
+                    "ID": 336772
+                },
+                {
+                    "text": "Aufnahme löschen",
+                    "ID": 336780
+                },
+                {
+                    "text": "",
+                    "ID": 336824
+                },
+                {
+                    "text": "",
+                    "ID": 336854
+                },
+                {
+                    "text": " Schriftart:",
+                    "ID": 336908
+                },
+                {
+                    "text": " Figuren",
+                    "ID": 336924
+                },
+                {
+                    "text": "Schlussanimation:",
+                    "ID": 336942
+                },
+                {
+                    "text": " Hintergrundfarbe:",
+                    "ID": 336950
+                },
+                {
+                    "text": "Text eingeben...",
+                    "ID": 336996
+                },
+                {
+                    "text": " zurück",
+                    "ID": 337040
+                },
+                {
+                    "text": "[00:00.0]",
+                    "ID": 337058
+                },
+                {
+                    "text": " Einstellungen",
+                    "ID": 337112
+                },
+                {
+                    "text": "",
+                    "ID": 337120
+                },
+                {
+                    "text": " Laden",
+                    "ID": 337146
+                },
+                {
+                    "text": " Gallerie",
+                    "ID": 337192
+                },
+                {
+                    "text": "",
+                    "ID": 337200
+                },
+                {
+                    "text": "Text eingeben...",
+                    "ID": 337208
+                },
+                {
+                    "text": "",
+                    "ID": 337216
+                },
+                {
+                    "text": "",
+                    "ID": 337254
+                },
+                {
+                    "text": "Google Sprachausgabe:",
+                    "ID": 337336
+                },
+                {
+                    "text": " Anfangszeit:",
+                    "ID": 337410
+                },
+                {
+                    "text": " Verlassen",
+                    "ID": 337494
+                },
+                {
+                    "text": "Upper Left",
+                    "ID": 337596
+                },
+                {
+                    "text": "Google Api Schlüssel:",
+                    "ID": 337740
+                },
+                {
+                    "text": " Einstellungen",
+                    "ID": 337776
+                },
+                {
+                    "text": " Exportieren",
+                    "ID": 337784
+                },
+                {
+                    "text": "Text eingeben...",
+                    "ID": 337822
+                },
+                {
+                    "text": " Auswählen:",
+                    "ID": 337830
+                },
+                {
+                    "text": "",
+                    "ID": 337940
+                },
+                {
+                    "text": " Schreibtisch",
+                    "ID": 337976
+                },
+                {
+                    "text": " Schriftgröße:",
+                    "ID": 338012
+                },
+                {
+                    "text": "00:10",
+                    "ID": 338038
+                },
+                {
+                    "text": "Text eingeben...",
+                    "ID": 338086
+                },
+                {
+                    "text": " Erstellen",
+                    "ID": 338190
+                },
+                {
+                    "text": " Textfarbe:",
+                    "ID": 338238
+                },
+                {
+                    "text": "",
+                    "ID": 338284
+                },
+                {
+                    "text": " Dauer:",
+                    "ID": 338320
+                },
+                {
+                    "text": " Minimieren",
+                    "ID": 338366
+                },
+                {
+                    "text": "Text eingeben...",
+                    "ID": 338444
+                },
+                {
+                    "text": "Text eingeben...",
+                    "ID": 338464
+                },
+                {
+                    "text": "Sprachausgabe / Aufnehmen",
+                    "ID": 338472
+                },
+                {
+                    "text": "PROJEKT NAME:",
+                    "ID": 338590
+                },
+                {
+                    "text": " Texte",
+                    "ID": 338634
+                },
+                {
+                    "text": "von A nach B bewegen:",
+                    "ID": 338642
+                },
+                {
+                    "text": "",
+                    "ID": 338650
+                },
+                {
+                    "text": "",
+                    "ID": 338752
+                },
+                {
+                    "text": "None",
+                    "ID": 338764
+                },
+                {
+                    "text": " Sichern",
+                    "ID": 338802
+                },
+                {
+                    "text": "",
+                    "ID": 338854
+                },
+                {
+                    "text": " Eingangsanimation:",
+                    "ID": 338868
+                },
+                {
+                    "text": "X",
+                    "ID": 338876
+                },
+                {
+                    "text": " Musik",
+                    "ID": 338884
+                },
+                {
+                    "text": "",
+                    "ID": 338954
+                },
+                {
+                    "text": "",
+                    "ID": 338966
+                },
+                {
+                    "text": "Text eingeben...",
+                    "ID": 338980
+                },
+                {
+                    "text": " Wiederholen:",
+                    "ID": 339100
+                }
+            ]
+        },
+        {
+            "textdata": [
+                {
+                    "text": "New Text 3 rus",
+                    "ID": -41736
+                },
+                {
+                    "text": "New Text 2 rus",
+                    "ID": -33884
+                },
+                {
+                    "text": "New Text 1 rus",
+                    "ID": -33818
+                }
+            ]
+        }
+    ],
+    "languageName": [
+        "english",
+        "german",
+        "hindi"
+    ]
+}
