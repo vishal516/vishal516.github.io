@@ -1,4 +1,4 @@
-invalid
+valid
 
 invalid-block
 valid-unblock
