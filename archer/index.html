@@ -39,7 +39,6 @@
 		}
     </style>
 	
-<script src="https://jiogames.akamaized.net/gameSDK/games_android_SDK.js"> </script>
 
 </head> 
  
@@ -47,20 +46,88 @@
 	<div id="fb-root"></div>
 	
 	<script>
-		var jioSDK = new Jiogames();
-		jioSDK.myAdspotkey ="b2dd11dc"; // The adspot key shared
-		jioSDK.myGameSource ="com.mds.superarcherSTB";// The package name of your game
-
-		function cacheAd(){ 
-			console.log("Ad is cached")
-			jioSDK.cacheAd(jioSDK.myAdspotkey, jioSDK.myGameSource); 
-		} 
-
-		function showAd(){
-			console.log("Ad is called");
-			jioSDK.showAd(jioSDK.myAdspotkey, jioSDK.myGameSource);
+		var adKeyId = "b2dd11dc";
+		var source  = "com.mds.superarcherSTB";
+		var isReady = false;
+		
+		function cacheAd()
+		{
+			console.log("Jiogames: cacheAd() adkeyId: "+adKeyId+" source: "+source);
+			if(!isReady)
+				window.DroidHandler.cacheAd(adKeyId, source);
 		}
+		
+		function showAd()
+		{
+			console.log("Jiogames: showAd() adKeyId: "+adKeyId+" source "+source);
+			if(isReady)
+				window.DroidHandler.showAd(adKeyId, source);
+		}
+		
+		function postScore(score) 
+		{
+            //Always send your best score only.
+			console.log("postscore "+score);
+            window.DroidHandler.postScore(score);
+        }
+		
+		
+		//////////////V1.3.8 currently live App callbacks//////////////
 
+window.OnAdClick = function () { 
+	isReady = false;
+	console.log("OnAdClick  " + isReady) 
+}
+
+window.OnAdclose = function () { 
+	isReady = false;
+	console.log("OnAdclose  " + isReady) 
+	setTimeout(function () { cacheAd() }, 2000)
+}
+
+window.OnAdError = function (errorObject) { 
+	isReady = false; 
+	console.log("OnAdError  " + isReady) 
+}
+
+window.OnAdReady = function () { 
+	isReady = true; 
+	console.log("OnAdReady  " + isReady) 
+}
+
+//////////////END//////////////
+
+
+//////////////Correction callbacks coming in next build//////////////
+window.onAdReady = function (adKeyIdKey) {
+	adKeyIdKey == adKeyId && (isReady = true, console.log("onAdReady  " + isReady));
+};
+window.onAdClose = function (adKeyIdKey) {
+	adKeyIdKey == adKeyId && (isReady = false, console.log("onAdClose  " + isReady));
+
+	adKeyIdKey == adKeyId && (isReady = false, setTimeout(function () { jioSDK.cacheAd(adKeyId, gamePackage) }, 2000));
+};
+window.OnAdError = function (adKeyIdKey, errorMessage) {
+	adKeyIdKey == adKeyId && (isReady = false, console.log("OnAdError  " + isReady + " errorMessage " + errorMessage));
+};
+window.onAdMediaEnd = function (adKeyIdKey, success, value) {
+	adKeyIdKey == adKeyId && (isReady = false, console.log("onAdMediaEnd  " + isReady + " success: " + success + " value: " + value));
+};
+window.onAdClick = function (adKeyIdKey) {
+};
+window.onAdMediaCollapse = function (adKeyIdKey) {};
+window.onAdMediaExpand = function (adKeyIdKey) {};
+window.onAdMediaStart = function (adKeyIdKey) {};
+window.onAdRefresh = function (adKeyIdKey) {};
+window.onAdRender = function (adKeyIdKey) {};
+window.onAdSkippable = function (adKeyIdKey) {};
+window.onAdView = function (adKeyIdKey) {};
+//////////////END//////////////
+		
+		
+		
+		
+		
 	</script>
 	
 	<script>
