@@ -1,0 +1,15 @@
+.box {}
+
+body {
+    margin: 0px;
+    background: url(assets/bg.jpg);
+    background-color: #06b100;
+}
+
+.card {
+    word-wrap: break-word;
+}
+
+.overlayButton {
+    position: absolute;
+}

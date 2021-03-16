@@ -1,0 +1,115 @@
+﻿<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body onload=setContent()>
+    <div id='home-body' class="container">
+        <div class="row">
+            <div id='game-card' class="col-px-1">
+                <div class="card bg m-1">
+                    <img id='game-icon' class="card-img-top  p-2" src="assets/electrio.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">Electrio</h6>
+                        <p class="card-text">play electrio</p>
+                        <a onclick="showGame(event)" name='this is data' class="btn btn-success">Play Now</a>
+                    </div>
+                    <div style="width:200px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id='game-body'>
+        <button class="btn btn-danger overlayButton " onclick="showHome(false)">Close</button>
+        <iframe id='game-frame' class="full-screen-preview__frame" src="#" name="preview-frame" frameborder="0" noresize="noresize" data-view="fullScreenPreview" allow="geolocation 'self'; autoplay 'self'" style="width:100%; height: 100%;"> 
+    </iframe>
+    </div>
+    </div>
+</body>
+
+<script>
+    var frame = document.getElementById('game-frame');
+    document.getElementById('game-body').hidden = true;
+
+    function showGame(event) {
+        document.getElementById('game-body').hidden = false;
+        document.getElementById('home-body').hidden = true;
+        console.log('old', frame.src);
+        frame.src = event.srcElement.attributes.name.value;
+        console.log(event.srcElement.attributes.name.value);
+    }
+
+    function showHome() {
+        document.getElementById('game-body').hidden = true;
+        document.getElementById('home-body').hidden = false;
+        frame.src = '';
+    }
+
+    function setContent() {
+
+        var gamesList = [{
+            game: 'Electrio',
+            link: 'https://previews.customer.envatousercontent.com/files/221616027/index.html',
+            absoluteName: 'electrio'
+        }, {
+            game: 'Fishing',
+            link: 'https://previews.customer.envatousercontent.com/files/192784496/index.html',
+            absoluteName: 'fishing'
+        }, {
+            game: 'Christmas furious',
+            link: 'https://keiow.com/portfolio/games/christmas-furious/preview/gameplay/index.html',
+            absoluteName: 'gamechristmasfurious'
+        }, {
+            game: 'Goldminer',
+            link: 'https://previews.customer.envatousercontent.com/files/227719674/index.html',
+            absoluteName: 'goldminer'
+        }, {
+            game: 'Bubble Shooter',
+            link: 'https://previews.customer.envatousercontent.com/files/207022222/index.html',
+            absoluteName: 'haloweenbubbleshooter'
+        }, {
+            game: 'Haloween Memory',
+            link: 'https://previews.customer.envatousercontent.com/files/235873248/index.html',
+            absoluteName: 'haloweenmemory'
+        }, {
+            game: 'jelly',
+            link: 'https://0.s3.envato.com/files/206816504/index.html',
+            absoluteName: 'jelly'
+        }, {
+            game: 'Ninjarun',
+            link: 'https://previews.customer.envatousercontent.com/files/204072644/index.html',
+            absoluteName: 'ninjarun'
+        }, {
+            game: 'SpacePurge',
+            link: 'https://previews.customer.envatousercontent.com/files/192787138/index.html',
+            absoluteName: 'SpacePurge'
+        }, {
+            game: 'Traffic',
+            link: 'https://0.s3.envato.com/files/206817031/index.html',
+            absoluteName: 'traffic'
+        }, {
+            game: 'vikings',
+            link: 'https://previews.customer.envatousercontent.com/files/226424085/index.html',
+            absoluteName: 'vikings'
+        }, ]
+
+        var itm = document.getElementById('game-card');
+
+        for (let i = 0; i < gamesList.length; i++) {
+            var cln = itm.cloneNode(true);
+            document.getElementsByClassName('row')[0].append(cln);
+            cln.getElementsByClassName('card-body')[0].parentElement.children[0].src = 'assets/' + gamesList[i].absoluteName + '.png';
+            cln.getElementsByClassName('card-title')[0].innerText = gamesList[i].game;
+            cln.getElementsByClassName('card-body')[0].children[2].name = gamesList[i].link;
+        }
+
+        console.log('content setup');
+        itm.remove();
+    }
+</script>
+
+</html>
