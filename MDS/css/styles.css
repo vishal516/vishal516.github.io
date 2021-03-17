@@ -6,8 +6,8 @@ body {
     background-color: #06b100;
 }
 
-.card {
-    word-wrap: break-word;
+.card-text {
+    font-size: 0.7rem;
 }
 
 .overlayButton {
