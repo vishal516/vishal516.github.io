@@ -15,10 +15,12 @@
         <div class="container-fluid">
             <div id='card-parent' class="row">
                 <div id='game-card' class="card card-sm">
+                    <!-- <div class="card-img-top p-2 iconborder"></div> -->
                     <img id='game-icon' class="card-img-top p-2 " src="assets/electrio.png " alt="Card image cap ">
+
                     <div class="card-body ">
                         <h6 class="card-title ">Electrio</h6>
-                        <p class="card-text " style="word-wrap: break-word; ">play electrio</p>
+                        <p class="card-text " style="font-size: small; ">play electrio</p>
                         <a onclick="showGame(event) " name='this is data' class="btn btn-success ">Play Now</a>
                     </div>
                     <div style="width:200px "></div>
@@ -56,62 +58,101 @@
 
     function setContent() {
 
-        var gamesList = [{
-            game: 'Electrio',
-            link: 'https://previews.customer.envatousercontent.com/files/221616027/index.html',
-            absoluteName: 'electrio'
+        var gamesList = [
+            // {
+            //     game: 'Electrio',
+            //     link: 'https://previews.customer.envatousercontent.com/files/221616027/index.html',
+            //     absoluteName: 'electrio'
+            // }, 
+            {
+                game: 'Fishing',
+                link: 'https://previews.customer.envatousercontent.com/files/192784496/index.html',
+                absoluteName: 'fishing'
+            }, {
+                game: 'Christmas furious',
+                link: 'https://keiow.com/portfolio/games/christmas-furious/preview/gameplay/index.html',
+                absoluteName: 'gamechristmasfurious'
+            }, {
+                game: 'Goldminer',
+                link: 'https://previews.customer.envatousercontent.com/files/227719674/index.html',
+                absoluteName: 'goldminer'
+            },
+            // {
+            //     game: 'Bubble Shooter',
+            //     link: 'https://previews.customer.envatousercontent.com/files/207022222/index.html',
+            //     absoluteName: 'haloweenbubbleshooter'
+            // },
+            {
+                game: 'Haloween Memory',
+                link: 'https://previews.customer.envatousercontent.com/files/235873248/index.html',
+                absoluteName: 'haloweenmemory'
+            }, {
+                game: 'Jelly',
+                link: 'https://0.s3.envato.com/files/206816504/index.html',
+                absoluteName: 'jelly'
+            },
+            // {
+            //     game: 'Ninja Run',
+            //     link: 'https://previews.customer.envatousercontent.com/files/204072644/index.html',
+            //     absoluteName: 'ninjarun'
+            // },
+            {
+                game: 'Space Purge',
+                link: 'https://previews.customer.envatousercontent.com/files/192787138/index.html',
+                absoluteName: 'SpacePurge'
+            },
+            // {
+            //     game: 'Traffic',
+            //     link: 'https://0.s3.envato.com/files/206817031/index.html',
+            //     absoluteName: 'traffic'
+            // }, 
+            {
+                game: 'Vikings',
+                link: 'https://previews.customer.envatousercontent.com/files/226424085/index.html',
+                absoluteName: 'vikings'
+            }, {
+                game: 'Hextris',
+                link: 'games/hextris/index.html',
+                absoluteName: 'hextrix'
+            }, {
 
-        }, {
-            game: 'Fishing',
-            link: 'https://previews.customer.envatousercontent.com/files/192784496/index.html',
-            absoluteName: 'fishing'
-        }, {
-            game: 'Christmas furious',
-            link: 'https://keiow.com/portfolio/games/christmas-furious/preview/gameplay/index.html',
-            absoluteName: 'gamechristmasfurious'
-        }, {
-            game: 'Goldminer',
-            link: 'https://previews.customer.envatousercontent.com/files/227719674/index.html',
-            absoluteName: 'goldminer'
-        }, {
-            game: 'Bubble Shooter',
-            link: 'https://previews.customer.envatousercontent.com/files/207022222/index.html',
-            absoluteName: 'haloweenbubbleshooter'
-        }, {
-            game: 'Haloween Memory',
-            link: 'https://previews.customer.envatousercontent.com/files/235873248/index.html',
-            absoluteName: 'haloweenmemory'
-        }, {
-            game: 'Jelly',
-            link: 'https://0.s3.envato.com/files/206816504/index.html',
-            absoluteName: 'jelly'
-        }, {
-            game: 'Ninja Run',
-            link: 'https://previews.customer.envatousercontent.com/files/204072644/index.html',
-            absoluteName: 'ninjarun'
-        }, {
-            game: 'Space Purge',
-            link: 'https://previews.customer.envatousercontent.com/files/192787138/index.html',
-            absoluteName: 'SpacePurge'
-        }, {
-            game: 'Traffic',
-            link: 'https://0.s3.envato.com/files/206817031/index.html',
-            absoluteName: 'traffic'
-        }, {
-            game: 'Vikings',
-            link: 'https://previews.customer.envatousercontent.com/files/226424085/index.html',
-            absoluteName: 'vikings'
-        }, ]
+                game: 'Mad Scientist',
+                link: 'https://previews.customer.envatousercontent.com/files/270685533/index.html',
+                absoluteName: 'madscientist'
+            }, {
+                game: 'Angry cat shot',
+                link: 'https://previews.customer.envatousercontent.com/files/256952622/index.html',
+                absoluteName: 'angrycat'
+            },
+
+            {
+                game: 'Traffic command',
+                link: 'https://previews.customer.envatousercontent.com/files/262562744/index.html',
+                absoluteName: 'trafficcommand'
+            },
+
+            {
+                game: 'Ranger vs Zombies',
+                link: 'https://previews.customer.envatousercontent.com/files/218771835/index.html',
+                absoluteName: 'rangervszombies'
+            }, {
+                game: 'Mad Shark',
+                link: 'https://0.s3.envato.com/files/206813149/index.html',
+                absoluteName: 'madshark'
+            },
+
+
+        ]
 
         var itm = document.getElementById('game-card');
 
         for (let i = 0; i < gamesList.length; i++) {
             var cln = itm.cloneNode(true);
             document.getElementById('card-parent').append(cln);
-            cln.getElementsByClassName('card-body')[0].parentElement.children[0].src = 'assets/' + gamesList[i].absoluteName + '.png';
+            cln.getElementsByTagName('img')[0].src = 'assets/' + gamesList[i].absoluteName + '.png';
             cln.getElementsByClassName('card-title')[0].innerText = gamesList[i].game;
             cln.getElementsByClassName('card-text')[0].innerText = 'Play ' + gamesList[i].game;
-            cln.getElementsByClassName('card-body')[0].children[2].name = gamesList[i].link;
+            cln.getElementsByClassName('btn')[0].name = gamesList[i].link;
         }
 
         console.log('content setup');
