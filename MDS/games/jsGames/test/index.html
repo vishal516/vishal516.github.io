@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Canvas Basic Game Framework</title>
+    <script type="text/javascript" src="lib/createjs.min.js"></script>
+    <script type="text/javascript" src="data/gameobjects.js"></script>
+    <script type="text/javascript" src="game/gamerules.js"></script>
+
+    <script type="text/javascript" src="game.js"></script>
+
+    <!-- <script src="script/lib/LAB.min.js"></script>
+    <script>
+        $LAB
+                .script('script/system/Keys.js').wait()
+                .script('script/Assets.js').wait(function () {
+                    Game.start('gameArea','screen', 1500, 825);
+                });
+
+    </script> -->
+</head>
+
+<body style="margin: 0px; overflow: hidden; " onresize="reseizeCanvas()">
+    <canvas id="viewport" width="1600" height="1000"></canvas>
+
+    <script>
+        //canvas = document.querySelector('canvas');
+        var canvas = document.getElementById("viewport");
+        var context = canvas.getContext("2d");
+
+        level = {
+            x: 1,
+            y: 65,
+            width: canvas.width - 2,
+            height: canvas.height - 66
+        }
+
+        function reseizeCanvas() {
+            canvas.style.height = window.innerHeight + 'px';
+            canvas.style.width = window.innerWidth + 'px';
+        }
+
+        reseizeCanvas();
+
+
+        function reseizeCanvasKeepAR() {
+            widthToHeight = window.innerWidth / window.innerHeight
+            widthToHeightIdeal = 16 / 10; //window.screen.width / window.screen.height;
+            state = (widthToHeight > widthToHeightIdeal ? 'wider' : 'higher');
+
+            if (widthToHeight > widthToHeightIdeal) {
+                canvas.style.height = window.innerHeight + 'px';
+                canvas.style.width = window.innerHeight * widthToHeightIdeal + 'px';
+                canvas.style.marginLeft = (window.innerWidth - window.innerHeight * widthToHeightIdeal) / 2 + 'px';
+                canvas.style.marginTop = 0 + 'px';
+            } else {
+                canvas.style.width = window.innerWidth + 'px';
+                canvas.style.height = window.innerWidth / widthToHeightIdeal + 'px';
+                canvas.style.marginTop = (window.innerHeight - window.innerWidth / widthToHeightIdeal) / 2 + 'px';
+                canvas.style.marginLeft = 0 + 'px';
+            }
+
+
+        }
+
+        function resizeDiv() {
+            widthToHeight = window.innerWidth / window.innerHeight
+            widthToHeightIdeal = window.screen.width / window.screen.height;
+            state = (widthToHeight > widthToHeightIdeal ? 'wider' : 'higher');
+
+            if (widthToHeight > widthToHeightIdeal) {
+                view.style.height = window.innerHeight + 'px';
+                view.style.width = window.innerHeight * widthToHeightIdeal + 'px';
+                view.style.marginLeft = (window.innerWidth - window.innerHeight * widthToHeightIdeal) / 2 + 'px';
+                view.style.marginTop = 0 + 'px';
+            } else {
+                view.style.width = window.innerWidth + 'px';
+                view.style.height = window.innerWidth / widthToHeightIdeal + 'px';
+                view.style.marginTop = (window.innerHeight - window.innerWidth / widthToHeightIdeal) / 2 + 'px';
+                view.style.marginLeft = 0 + 'px';
+            }
+
+        }
+    </script>
+</body>
+
+
+
+</html>

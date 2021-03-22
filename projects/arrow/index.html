@@ -38,13 +38,136 @@
 			-ms-touch-action: none;
 		}
     </style>
+
+	<script src="//jiogames.akamaized.net/gameSDK/games_SDK.js"></script>
+	<link href="toastr.css" rel="stylesheet">
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="toastr.js"></script>
 	
 
 </head> 
  
 <body> 
 	<div id="fb-root"></div>
-	
+	<ins class="adsbyjio" id="ad_mainScreen" data-adspot-key="f352af57" data-source="com.mds.arrow" data-idfa=""></ins>
+
+	<ins class="adsbyjio"
+		 id="AD_SPOT_ID"
+		 data-adspot-key="413650f7"
+		 data-source="com.mds.arrow"
+		 data-rewarded="true"
+		 data-idfa="SpookyAdID">
+	</ins>
+
+	<script>
+		var jioSDK;
+		var rvReady;
+		window.onload = function () {
+			console.log("window onload");
+			var jioConf = { "gameName": "Arrow", "gameVersion": "2.0.0", "autoControl": ["volume", "exit"] };
+			jioSDK = new window.Jiogames(jioConf);
+
+			VMAX.onAdReady = function (AdPlacementId) {
+				if (AdPlacementId == "ad_mainScreen") {
+					console.log("VMAX: onAdReady");
+					VMAX.jioSDK_adReady = true;
+				} else if (AdPlacementId == "AD_SPOT_ID") {
+					rvReady = true;
+					console.log("rv onAdReady");
+				}
+			}
+			VMAX.onAdError = function (AdPlacementId, errorCode) {
+				console.log("VMAX: onAdError: ", errorCode);
+				if (AdPlacementId == "ad_mainScreen") {
+					VMAX.jioSDK_adReady = false;
+				} else if (AdPlacementId == "AD_SPOT_ID") {
+					rvReady = false;
+					console.log("rv onAdError");
+					c2_callFunction("VideoRewardFail");
+				}
+			}
+			VMAX.onAdClose = function (AdPlacementId) {
+				console.log("onAdClose");
+				if (AdPlacementId == "ad_mainScreen") {
+					setTimeout(function () {
+						console.log("VMAX: onAdClose");
+						VMAX.cacheAd(VMAX.jioSDK_adId);
+						//cacheAds(); // call cache on every ad close and get prepared for next ad
+					}, 3000);
+				} else if (AdPlacementId == "AD_SPOT_ID") {
+					setTimeout(function () {
+						rvReady = false;
+						console.log("rv onAdClose");
+						//VMAX.cacheAd(rewardedVideoId);
+						VMAX.cacheAd("AD_SPOT_ID");
+						//c2_callFunction("VideoRewardFail");
+					}, 3000);
+				}
+			};
+			VMAX.onAdMediaEnd = function (AdPlacementId, success, rewardpoints) {
+				console.log("onAdMediaEnd..............." + AdPlacementId + " success " + success + " rewardpoints " + rewardpoints);
+				c2_callFunction("VideoRewardSuccess");
+			};
+			VMAX.onAdClick = function (AdPlacementId, success) {
+				console.log("onAdClick............... AdPlacementId: " + AdPlacementId + " success " + success);
+				if (AdPlacementId == "AD_SPOT_ID") {
+					setTimeout(function () {
+						rvReady = false;
+						console.log("rv onAdClose");
+						//VMAX.cacheAd(rewardedVideoId);
+						VMAX.cacheAd("AD_SPOT_ID");
+						//	c2_callFunction("VideoRewardFail");
+					}, 3000);
+				}
+			};
+			VMAX.onAdMediaStart = function (AdPlacementId, success) {
+				console.log("onAdMediaStart AdPlacementId: " + AdPlacementId + " success " + success);
+			};
+			VMAX.onAdRefresh = function (AdPlacementId, success) {
+				console.log("onAdRefresh AdPlacementId: " + AdPlacementId + " success " + success);
+			};
+			VMAX.onAdSkippable = function (AdPlacementId, success) {
+				console.log("onAdSkippable AdPlacementId: " + AdPlacementId + " success " + success);
+			};
+
+
+			window.cacheAds = function () {
+				console.log("window cacheAds");
+				VMAX.jioSDK_adId = "ad_mainScreen"; // <ins ads id in index.html
+				VMAX.jioSDK_adReady = false;
+				console.log("calling cache Jio Ad");
+
+				VMAX.cacheAd(VMAX.jioSDK_adId);
+				var rewardedVideoId = "AD_SPOT_ID";
+				VMAX.cacheAd("AD_SPOT_ID");
+			};
+			cacheAds();
+			console.log("window load end");
+		}
+		function showAd() {
+			console.log("Show Ad is called");
+			if (VMAX.jioSDK_adReady) {
+				VMAX.showAd(VMAX.jioSDK_adId);
+				console.log("showing ads on id: ", VMAX.jioSDK_adId);
+			}
+		}
+		function RewardAd() {
+			var rewardedVideoId = "AD_SPOT_ID";
+			VMAX.showAd("AD_SPOT_ID");
+			console.log("showing ads on id: ", rewardedVideoId);
+		}
+		function CheckAD() {
+			if (rvReady) {
+				RewardAd()
+				// c2_callFunction("VideoAdReady");
+			}
+			else {
+
+				toastr.error('No Ad Available');
+				c2_callFunction("VideoRewardFail");
+			}
+		}
+	</script>
 	<script>
 	// Issue a warning if trying to preview an exported project on disk.
 	(function(){
