@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Canvas Basic Game Framework</title>
+    <script type="text/javascript" src="lib/createjs.min.js"></script>
+
+
+    <script type="text/javascript" src="Util/Utility.js"></script>
+    <script type="text/javascript" src="data/gameobjects.js"></script>
+    <script type="text/javascript" src="UI.js"></script>
+    <script type="text/javascript" src="game/gamerules.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+
+    <!-- <script src="script/lib/LAB.min.js"></script>
+    <script>
+        $LAB
+                .script('script/system/Keys.js').wait()
+                .script('script/Assets.js').wait(function () {
+                    Game.start('gameArea','screen', 1500, 825);
+                });
+
+    </script> -->
+</head>
+
+<body style="margin: 0px; overflow: hidden; background-color: black; " onresize="resizeCanvas();">
+    <canvas id="viewport" width="1600" height="1000"></canvas>
+
+    <script>
+        //canvas = document.querySelector('canvas');
+
+        var canvas;
+        var context;
+        Canvas2D();
+
+        function Canvas2D() {
+            this.canvas = document.getElementById("viewport");
+            this.context = canvas.getContext("2d");
+        }
+
+        level = {
+            x: 1,
+            y: 65,
+            width: canvas.width - 2,
+            height: canvas.height - 66
+        }
+
+        function resizeCanvas() {
+            canvas.style.height = window.innerHeight + 'px';
+            canvas.style.width = window.innerWidth + 'px';
+        }
+        resizeCanvas();
+        let canvas2d = new Canvas2D();
+
+        //resizeCanvasKeepAR();
+
+
+        function resizeCanvasKeepAR() {
+            widthToHeight = window.innerWidth / window.innerHeight
+            widthToHeightIdeal = 16 / 10; //window.screen.width / window.screen.height;
+            state = (widthToHeight > widthToHeightIdeal ? 'wider' : 'higher');
+
+            if (widthToHeight > widthToHeightIdeal) {
+                canvas.style.height = window.innerHeight + 'px';
+                canvas.style.width = window.innerHeight * widthToHeightIdeal + 'px';
+                canvas.style.marginLeft = (window.innerWidth - window.innerHeight * widthToHeightIdeal) / 2 + 'px';
+                canvas.style.marginTop = 0 + 'px';
+            } else {
+                canvas.style.width = window.innerWidth + 'px';
+                canvas.style.height = window.innerWidth / widthToHeightIdeal + 'px';
+                canvas.style.marginTop = (window.innerHeight - window.innerWidth / widthToHeightIdeal) / 2 + 'px';
+                canvas.style.marginLeft = 0 + 'px';
+            }
+        }
+    </script>
+</body>
+
+
+
+</html>
