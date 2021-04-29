@@ -162,7 +162,6 @@ var gameobjects = {
         'images/Player/santaspritesheet.png',
         'images/Player/santashootss.png',
         'images/Player/santajump.png',
-        'images/Player/santathrow.png',
 
         'images/enemies/deerss.png',
         'images/enemies/snowmanss.png',
