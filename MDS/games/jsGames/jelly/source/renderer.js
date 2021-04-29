@@ -75,7 +75,8 @@ function renderUI() {
         spriteWrite('press left button or right button to move vertically or horizontally', fontSmall, 800, 350, true);
         spriteWrite('press up button to pick a jelly for swaping and ', fontSmall, 800, 450, true);
         spriteWrite('then press left or right button to swap', fontSmall, 800, 550, true);
-        spriteWrite('PRESS OK BUTTON TO GO BACK TO MAIN MENU', fontMedium, 800, 650, true);
+        spriteWrite('while playing press ok button to pause', fontSmall, 800, 650, true);
+        spriteWrite('PRESS OK BUTTON TO GO BACK TO MAIN MENU', fontMedium, 800, 750, true);
     }
     //spriteWrite('state:' + gameobjects.gamestate, fontMedium, 400, 50, true);
 

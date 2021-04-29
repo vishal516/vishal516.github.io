@@ -5,14 +5,15 @@ var gameready = function() {
     var lastframe = 0;
     var fpstime = 0;
     var framecount = 0;
-    var keyState = [];
+
     console.log('assets loaded');
     window.addEventListener('keydown', function(e) {
-        keyState[e.keyCode || e.which] = true;
+        gameobjects.keyState[e.keyCode || e.which] = true;
     }, true);
     window.addEventListener('keyup', function(e) {
-        keyState[e.keyCode || e.which] = false;
+        gameobjects.keyState[e.keyCode || e.which] = false;
     }, true);
+
     window.addEventListener("keyup", function(e) {
         switch (e.keyCode) {
             case 37:

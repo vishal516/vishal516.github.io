@@ -1,6 +1,10 @@
 "use strict";
 
 var gameobjects = {
+    "keyState": {},
+    "ignoreEvent": false,
+    "holdtime": 0,
+    "canpick": false,
     "defaults": {
         "warnings": {
             "x": 600,
@@ -69,6 +73,7 @@ var gameobjects = {
         "height": 1000
     },
     "matcheffects": [],
+    "matchfaileffects": null,
     "gamestate": "",
     "states": {
         "loading": "loading",
@@ -80,7 +85,7 @@ var gameobjects = {
         "info": "info"
     },
     "images": [
-        'images/background.png',
+        'images/background.jpg',
         'images/bat.png',
         //GUI
         'images/selector.png',
@@ -140,6 +145,12 @@ var gameobjects = {
         'images/hm/Cards/Card_39.png',
         'images/hm/Cards/CardS.png',
         'images/hm/Cards/Card.png',
+        'images/target.png',
+        'images/time.png',
+        'images/score.png',
+        'images/level.png',
+        'images/statsbg.png',
+        'images/arrows.png',
     ],
     "sounds": ['media/swap.ogg', 'media/match.m4a', 'media/score.m4a', 'media/button.m4a',
         'media/gamemusic.ogg',
@@ -166,6 +177,18 @@ var GUI = {
         "xdir": 1,
         "ydir": 1,
         "speed": 200
+    },
+    "levelicon": {
+        "x": 70,
+        "y": 100,
+        "width": 100,
+        "height": 100,
+        "icongap": 200,
+        "child": {
+            "x": 80,
+            "y": 110,
+            "size": 80
+        }
     },
     "gamelogo": {
         "x": 400,
@@ -222,20 +245,20 @@ var GUI = {
         "height": 400
     },
     "cellPreview": {
-        "x": 1380,
+        "x": 1250,
         "y": 150,
         "width": 200,
         "height": 200 * 1.2,
     },
 
     "collectionPreview": {
-        "x": 1380,
+        "x": 1250,
         "y": 580,
         "width": 200,
         "height": 200 * 1.2,
     },
     "directionPreview": {
-        "x": 1420,
+        "x": 1280,
         "y": 320,
         "width": 120,
         "height": 120
@@ -338,6 +361,16 @@ function matcheffect(cell) {
         //var x = this;for (var i = 0; i < gameobjects.matcheffects.length; i++) {if (gameobjects.matcheffects[i] == x) gameobjects.matcheffects.splice(i, 1);}//uncomment if effect is selfdestructive
     });
 }
+
+function matchfaileffect(cell) {
+    this.x = cell.x;
+    this.y = cell.y;
+    this.width = cell.width;
+    this.height = cell.height;
+    this.image = cell.image;
+}
+
+
 
 function raindrop() {
     this.x = randomFloat(0, 1600);

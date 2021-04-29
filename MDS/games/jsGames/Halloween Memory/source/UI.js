@@ -87,30 +87,34 @@ function enterkeyPressedGUI() {
     } else if (gameobjects.gamestate == gameobjects.states.info) {
         gameobjects.gamestate = gameobjects.states.home;
     } else if (gameobjects.gamestate == gameobjects.states.play) {
-        gameobjects.gamestate = gameobjects.states.pause;
-        console.log('paused');
+        //gameobjects.gamestate = gameobjects.states.pause;
+        //console.log('paused');
     } else if (gameobjects.gamestate == gameobjects.states.pause) {
-        if (pauseScreenPointerPos == 0) {
-            gameobjects.gamestate = gameobjects.states.play;
-        }
+        if (gameobjects.ignoreEvent)
+            gameobjects.ignoreEvent = false;
+        else {
+            if (pauseScreenPointerPos == 0) {
+                gameobjects.gamestate = gameobjects.states.play;
+            }
 
-        if (pauseScreenPointerPos == 1) {
-            // restart level
-            startgame();
-            gameobjects.gamestate = gameobjects.states.play;
-        }
+            if (pauseScreenPointerPos == 1) {
+                // restart level
+                startgame();
+                gameobjects.gamestate = gameobjects.states.play;
+            }
 
-        if (pauseScreenPointerPos == 2) {
-            // go to home
-            gameobjects.gamestate = gameobjects.states.home;
-        }
+            if (pauseScreenPointerPos == 2) {
+                // go to home
+                gameobjects.gamestate = gameobjects.states.home;
+            }
 
-        if (pauseScreenPointerPos == 3) {
-            // toggle audio on off
-            console.log('audio');
-            handleGlobalSound();
-            homeScreenButtonList[2] = globalsound ? img.BtnSoundOn : img.BtnSoundOff;
-            pauseScreenButtonList[3] = globalsound ? img.BtnSoundOn : img.BtnSoundOff;
+            if (pauseScreenPointerPos == 3) {
+                // toggle audio on off
+                console.log('audio');
+                handleGlobalSound();
+                homeScreenButtonList[2] = globalsound ? img.BtnSoundOn : img.BtnSoundOff;
+                pauseScreenButtonList[3] = globalsound ? img.BtnSoundOn : img.BtnSoundOff;
+            }
         }
     } else if (gameobjects.gamestate == gameobjects.states.overpass) // overpass
     {

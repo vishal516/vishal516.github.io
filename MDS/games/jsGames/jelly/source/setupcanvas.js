@@ -11,9 +11,15 @@ window.addEventListener('focus', function() {
 
 window.onload = function() {
     resizeCanvas();
-    canvas.style.display = 'block';
-    loader.style.display = 'none';
-    gameready();
+
+    setTimeout(
+        function startgame() {
+            document.getElementById('loader').style.display = 'none';
+            canvas.style.display = 'block';
+            gameready();
+        }, 2000
+    )
+
 };
 
 window.onresize = function() {

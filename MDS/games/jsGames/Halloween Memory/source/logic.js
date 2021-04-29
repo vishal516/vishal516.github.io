@@ -10,28 +10,30 @@ function renderer() {
 
 function leftkey() {
     if (gameobjects.gamestate == gameobjects.states.play) {
-        moveleft();
+        moveleft(true);
     }
 }
 
 function rightkey() {
-    if (gameobjects.gamestate == gameobjects.states.play) moveright();
+    if (gameobjects.gamestate == gameobjects.states.play) moveright(true);
 }
 
 function downkey() {
-    if (gameobjects.gamestate == gameobjects.states.play) rotate();
+    if (gameobjects.gamestate == gameobjects.states.play) moveright(false);
 }
 
 function upkey() {
-    if (gameobjects.gamestate == gameobjects.states.play) pick();
+    if (gameobjects.gamestate == gameobjects.states.play)
+        moveleft(false);
 }
 
-function enterkey() { //
-    //if (gameobjects.gamestate == gameobjects.states.play)
-}
+function enterkey() {
+    gameobjects.holdtime = 0;
+    if (gameobjects.gamestate == gameobjects.states.play && gameobjects.canpick) pick();
+};
 
 function spacekeyDebug() {
-    creategrid();
+    //creategrid();
 }
 
 function startgame() {
@@ -44,7 +46,11 @@ function startgame() {
     gameobjects.grid.level = 1;
     gameobjects.player.level = 1;
     gameobjects.matcheffects = [];
+    gameobjects.canpick = false;
     creategrid();
+    setTimeout(function() {
+        gameobjects.canpick = true;
+    }, 1000);
 }
 
 function timeover() {
@@ -132,6 +138,7 @@ function creategrid() {
     setselectorpos();
     clearInterval(gameobjects.defaults.stopwatch);
     gameobjects.defaults.stopwatch = counter();
+    gameobjects.selector.element = null;
 }
 
 function counter() {
@@ -148,6 +155,17 @@ function counter() {
 
 function updaterwithpause() {
     if (gameobjects.gamestate == gameobjects.states.play) {
+        if (gameobjects.keyState[13]) {
+            gameobjects.holdtime += 1;
+            if (gameobjects.holdtime > 40) {
+                gameobjects.ignoreEvent = true;
+                gameobjects.gamestate = gameobjects.states.pause;
+                console.log('paused');
+                gameobjects.holdtime = 0;
+
+            }
+        }
+
         if (!(gameobjects.defaults.duration > gameobjects.defaults.durationmin)) {
             gameobjects.gamestate = gameobjects.states.overfail;
             gameobjects.player.lastscore = gameobjects.player.score;
@@ -157,12 +175,12 @@ function updaterwithpause() {
     }
 }
 
-function moveleft() {
+function moveleft(vertical) {
     var xmin = Math.floor(gameobjects.grid.pos / gameobjects.grid.grid.col) * gameobjects.grid.grid.col;
     var xmax = xmin + gameobjects.grid.grid.col - 1;
     var ymin = gameobjects.grid.grid.col - 1;
 
-    if (!gameobjects.selector.dir) {
+    if (vertical) {
         gameobjects.grid.pos -= 1;
         if (gameobjects.grid.pos < xmin) gameobjects.grid.pos = xmax;
         if (gameobjects.grid.pos > xmax) gameobjects.grid.pos = xmin;
@@ -174,12 +192,12 @@ function moveleft() {
     }
 }
 
-function moveright() {
+function moveright(vertical) {
     var min = Math.floor(gameobjects.grid.pos / gameobjects.grid.grid.col) * gameobjects.grid.grid.col;
     var max = min + gameobjects.grid.grid.col - 1;
     var ymax = gameobjects.grid.cells.length - gameobjects.grid.grid.col;
 
-    if (!gameobjects.selector.dir) {
+    if (vertical) {
         gameobjects.grid.pos += 1;
         if (gameobjects.grid.pos < min) gameobjects.grid.pos = max;
         if (gameobjects.grid.pos > max) gameobjects.grid.pos = min;
@@ -209,7 +227,11 @@ function pick() {
             if (gameobjects.selector.element.type == newElement.type) {
                 destroy();
             } else {
-                gameobjects.selector.element = null;
+                gameobjects.matchfaileffects = new matchfaileffect(gameobjects.grid.cells[gameobjects.grid.pos])
+                setTimeout(function() {
+                    gameobjects.matchfaileffects = null;
+                    gameobjects.selector.element = null;
+                }, 250);
                 sound.turn.play();
             }
         }
