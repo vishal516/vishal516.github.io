@@ -1,5 +1,0 @@
-change pause logo
-change levelup logo
-change collectables images
-implement collectable features
-clear everything on level restart
