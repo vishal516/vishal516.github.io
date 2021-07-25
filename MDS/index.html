@@ -1,0 +1,141 @@
+﻿<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body onload=setContent()>
+    <div id='home-body' class="container-fluid">
+        <div class="navbar navbar-light bg-light ">
+            <div class="nav-link">HTML GAMES</div>
+        </div>
+        </br>
+        <div class="container-fluid">
+            <div id='card-parent' class="row">
+                <div id='game-card' class="card card-sm">
+                    <!-- <div class="card-img-top p-2 iconborder"></div> -->
+                    <img id='game-icon' class="img-responsive p-2 " src="assets/gameicon.png " width="100px" height="100px" alt="Card image cap ">
+                    <div class="card-body ">
+                        <h6 class="card-title ">Electrio</h6>
+                        <p class="card-text " style="font-size: small; ">play electrio</p>
+                        <a onclick="showGame(event) " name='this is data' class="btn btn-success ">Play Now</a>
+                    </div>
+                    <div style="width:200px "></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id='game-body'>
+        <button class="btn btn-danger overlayButton " onclick="showHome(false) ">Close</button>
+        <iframe id='game-frame' class="full-screen-preview__frame " src="# " name="preview-frame " frameborder="0 " noresize="noresize " data-view="fullScreenPreview " allow="geolocation 'self'; autoplay 'self' " style="width:100%; height: 100%; "> 
+    </iframe>
+    </div>
+    </div>
+</body>
+
+<script>
+    var frame = document.getElementById('game-frame');
+    document.getElementById('game-body').hidden = true;
+
+    function showGame(event) {
+        document.getElementById('game-body').hidden = false;
+        document.getElementById('home-body').hidden = true;
+        console.log('old', frame.src);
+        frame.src = event.srcElement.attributes.name.value;
+        console.log(event.srcElement.attributes.name.value);
+    }
+
+    function showHome() {
+        document.getElementById('game-body').hidden = true;
+        document.getElementById('home-body').hidden = false;
+        frame.src = '';
+    }
+
+    function setContent() {
+
+        var gamesList = [
+            {
+                game: 'Color Up',
+                absoluteName: 'colorup'
+            }, {
+                game: 'Driver Highway',
+                absoluteName: 'driverhighway'
+            }, {
+                game: 'Fishing Frenzy',
+                absoluteName: 'fishingfrenzy'
+            }, {
+                game: 'Halloween Memory',
+                absoluteName: 'halloweenmemory'
+            }, {
+                game: 'Jelly',
+                absoluteName: 'jelly'
+            }, {
+                game: 'One Plus Two',
+                absoluteName: 'oneplustwo'
+            }, {
+                game: 'Rotate Puzzle',
+                absoluteName: 'rotatepuzzle'
+            }, {
+                game: 'Santa Run',
+                absoluteName: 'santarun'
+            }, {
+                game: 'Santa Run 2',
+                absoluteName: 'santarun2'
+            }, {
+                game: 'Sliding Bricks',
+                absoluteName: 'slidingbricks'
+            }, {
+                game: 'Space Purge',
+                absoluteName: 'spacepurge'
+            }, {
+                game: 'Super Cowboy Run',
+                absoluteName: 'supercowboyrun'
+            }, {
+                game: 'Surf Riders',
+                absoluteName: 'surfriders'
+            }, {
+                game: 'Viking Escape',
+                absoluteName: 'vikingsescape'
+            },
+             {
+                game: 'Gold Miner',
+                absoluteName: 'goldminer'
+            },
+             {
+                game: 'Cricket',
+                absoluteName: 'cricketstb'
+            },
+             {
+                game: 'Indiara & Skull Gold',
+                absoluteName: 'indiaraskullgold'
+            },
+             {
+                game: 'Gravity Escape',
+                absoluteName: 'gravityescape'
+            },
+             {
+                game: 'Super Archer',
+                absoluteName: 'superarcher'
+            },
+        ]
+
+        let itm = document.getElementById('game-card');
+        let link = 'projects/games/folder/';
+        for (let i = 0; i < gamesList.length; i++) {
+            var cln = itm.cloneNode(true);
+            document.getElementById('card-parent').append(cln);
+            cln.getElementsByTagName('img')[0].src = link.replace('folder',gamesList[i].absoluteName) + '/icon-256.png';
+            cln.getElementsByClassName('card-title')[0].innerText = gamesList[i].game;
+            cln.getElementsByClassName('card-text')[0].innerText = 'Play ' + gamesList[i].game;
+            cln.getElementsByClassName('btn')[0].name = link.replace('folder',gamesList[i].absoluteName);
+        }
+
+        console.log('content setup');
+        itm.remove();
+    }
+</script>
+
+</html>

@@ -1,0 +1,2 @@
+﻿name : rotate puzzle 
+description :rotate puzzle is a casual puzzle game. Build the correct image by rotating the pieces of the puzzle before time runs out. use OK button to rotate a piece and have fun!
